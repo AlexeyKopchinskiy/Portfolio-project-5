@@ -78,7 +78,108 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 - Admin dashboard  
 - User profile + saved posts  
 
-*(Include links or screenshots of your wireframes/mockups)*
+### Website muck ups
+
+## 🏠 Homepage (Public View)
+
++----------------------------------------------------------+
+| LOGO         | Home | Blog | Subscribe | Log In/Out      |
++----------------------------------------------------------+
+| [Hero Banner: "Discover Powerful Writing"]               |
+| [CTA Button: Subscribe for Premium Content]              |
++----------------------------------------------------------+
+| [Filter: All | Fiction | Finance | Health | ... ]        |
++----------------------------------------------------------+
+| [Post Thumbnail]  [Post Title]  [Excerpt...] [Read More] |
+| [Post Thumbnail]  [Post Title]  [Excerpt...] [Read More] |
+| [Post Thumbnail]  [Post Title]  [Excerpt...] [Read More] |
++----------------------------------------------------------+
+| Newsletter Signup | About | License Info | Social Links  |
++----------------------------------------------------------+
+
+
+## 📄 Post Detail (Premium Gate Example)
+
+
++----------------------------------------------------------+
+| LOGO | Home | Blog | My Account | Log Out                |
++----------------------------------------------------------+
+| [Post Title: e.g. "How I Found My Voice Writing Daily"]  |
+| Author: Alexey • Date • Tags: Fiction, Journaling        |
++----------------------------------------------------------+
+| [Cover Image or Large Visual]                            |
++----------------------------------------------------------+
+| You’ve hit premium content! 🔒                           |
+| This post is for subscribers only.                       |
+| [Subscribe to Unlock Full Post]                          |
+| [Login as a Subscriber]                                  |
++----------------------------------------------------------+
+| Already a subscriber? Welcome back. Content loads here ↓ |
++----------------------------------------------------------+
+| [Like] [Bookmark] [Share]                                |
++----------------------------------------------------------+
+
+
+## 🔐 Login / Register
+
+
++-------------------------------+
+|       Welcome Back! 🔐       |
++-------------------------------+
+| [ Email ]                     |
+| [ Password ]                  |
+| [Log In]                      |
+| [Forgot Password?]            |
++-------------------------------+
+| New here? [Create an Account] |
++-------------------------------+
+
+
+## 🧑‍💼 Admin Dashboard (Site Owner View)
+
++--------------------------------+
+| Sidebar:                       |
+| - Dashboard                    |
+| - Posts                        |
+| - Subscribers                  |
+| - Analytics                    |
+| - Settings                     |
++--------------------------------+
+|         Recent Activity        |
+| [New post created]             |
+| [3 new subscribers today]      |
++--------------------------------+
+|           Posts Table          |
+| Title      | Status | Edit | 🗑 |
+| "Post A"   | Draft  | ✏️   | x |
+| "Post B"   | Live   | ✏️   | x |
++--------------------------------+
+| [+ New Post] [Export Data]     |
++--------------------------------+
+
+
+## 💳 Subscription Page
+
+
++--------------------------------------------------+
+| Choose Your Plan 💼                              |
++--------------------------------------------------+
+| 🟦 Monthly - $5/month                            |
+| - Access premium posts                           |
+| - Newsletter                                     |
+| [Subscribe]                                      |
++--------------------------------------------------+
+| 🟥 Yearly - $50/year (save 20%)                 |
+| - All Monthly features                           |
+| - Bonus e-book                                   |
+| [Subscribe]                                      |
++--------------------------------------------------+
+| [Secure Stripe Checkout Form Here]               |
+| Card Info • Billing Email • Pay Now              |
++--------------------------------------------------+
+| [Return to Blog]                                 |
++--------------------------------------------------+
+
 
 ## ⚙️ Setup Instructions
 
