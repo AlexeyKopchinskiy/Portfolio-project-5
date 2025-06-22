@@ -80,7 +80,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 ### Website muck ups
 
-## 🏠 Homepage (Public View)
+#### 🏠 Homepage (Public View)
 
 +----------------------------------------------------------+
 | LOGO         | Home | Blog | Subscribe | Log In/Out      |
@@ -98,7 +98,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 +----------------------------------------------------------+
 
 
-## 📄 Post Detail (Premium Gate Example)
+#### 📄 Post Detail (Premium Gate Example)
 
 
 +----------------------------------------------------------+
@@ -120,7 +120,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 +----------------------------------------------------------+
 
 
-## 🔐 Login / Register
+#### 🔐 Login / Register
 
 
 +-------------------------------+
@@ -135,7 +135,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 +-------------------------------+
 
 
-## 🧑‍💼 Admin Dashboard (Site Owner View)
+#### 🧑‍💼 Admin Dashboard (Site Owner View)
 
 +--------------------------------+
 | Sidebar:                       |
@@ -158,7 +158,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 +--------------------------------+
 
 
-## 💳 Subscription Page
+#### 💳 Subscription Page
 
 
 +--------------------------------------------------+
@@ -180,6 +180,11 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | [Return to Blog]                                 |
 +--------------------------------------------------+
 
+### Wireframe design
+
+#### Homepage
+
+![Homepage wireframe](/static/images/pp5-wireframe-startpage.png)
 
 ## ⚙️ Setup Instructions
 
