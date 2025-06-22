@@ -186,6 +186,10 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 ![Homepage wireframe](/static/images/pp5-wireframe-startpage.png)
 
+#### Mobile Homepage
+
+![Homepage wireframe mobile ](/static/images/PP5-wireframe-mobile-homepage.png)
+
 ## ⚙️ Setup Instructions
 
 ```bash
