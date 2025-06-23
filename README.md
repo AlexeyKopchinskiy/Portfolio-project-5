@@ -17,6 +17,9 @@ Portfolio Project 5 - E-commerce Applications
 - [Deployment](#deployment)
 - [License](#license)
 
+## How to View the Project
+- [View the deployed website](https://github.com/AlexeyKopchinskiy/Portfolio-project-5/)
+
 ## 📖 Project Overview
 
 This platform allows authors to manage and monetize content while providing a premium experience for paid subscribers. The goal is to provide a clean, SEO-optimized, and secure blogging space with real e-commerce functionality.
@@ -60,12 +63,6 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | Payments           | Stripe API           |
 | Version Control    | Git & GitHub         |
 ---------------------------------------------
----
-
-You could even mention optional extras like DreamStudio for logo generation, or Miro/Figma if you evolve to those later.
-
-Want me to format this section for `README.md` and slot it into your current layout? I’ll make it blend in like it was always meant to be there.
-
 
 ## 🚀 Agile Workflow
 
