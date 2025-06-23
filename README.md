@@ -104,6 +104,17 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 ![Mobile login / register page](./static/images/pp5-wireframe-mobile-login-register-page.png)
 
+## 🔧 Django Apps
+
+| **App name**    | **Purpose**                                  |
+|-----------------|----------------------------------------------|
+| blog            | Posts, categories, tags, post detail views   |
+| accounts        | Custom user model, login, registration       |
+| subscriptions   | Stripe integration, premium access control   |
+| core            | Homepage, about, footer, reusable templates  |
+| admin_dashboard | Admin-only views for content and analytics   |
+
+
 ## ⚙️ Setup Instructions
 
 ```bash
