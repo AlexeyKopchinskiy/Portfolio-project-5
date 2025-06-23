@@ -194,11 +194,19 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 #### Homepage
 
-![Homepage wireframe](/static/images/pp5-wireframe-startpage.png)
+![Homepage wireframe](./static/images/pp5-wireframe-startpage.png)
 
 #### Mobile Homepage
 
-![Homepage wireframe mobile ](/static/images/PP5-wireframe-mobile-homepage-simple.png)
+![Homepage wireframe mobile ](./static/images/pp5-wireframe-mobile-homepage-simple.png)
+
+#### Mobile Blog Post Details
+
+![Blog post detaile mobile view](./static/images/pp5-wireframe-mobile-blog-post-details-simple.png)
+
+### Mobile Login/register page
+
+![Mobile login / register page](./static/images/pp5-wireframe-mobile-login-register-page.png)
 
 ## ⚙️ Setup Instructions
 
