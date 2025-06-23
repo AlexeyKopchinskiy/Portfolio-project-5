@@ -45,14 +45,27 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 - Facebook product page / promotional mockup
 - Newsletter signup and SEO features (meta tags, sitemap)
 
-## 🛠 Technologies Used
+## 🛠 Technologies & Software Used
 
-- Python, Django, PostgreSQL
-- HTML5, CSS3, Bootstrap
-- JavaScript (Vanilla or React, if added)
-- Stripe API
-- Git & GitHub for version control
-- Heroku or Render for deployment
+---------------------------------------------
+| Purpose            | Tool                 |
+|--------------------|--------------------- |
+| Code Development   | Visual Studio Code   |
+| Backend Framework  | Django (Python)      |
+| Database           | PostgreSQL           |
+| UI Styling         | HTML, CSS, Bootstrap |
+| Design/Mockups     | CorelDraw, Photoshop |
+| Wireframing        | CorelDraw, Photoshop |
+| Deployment         | Heroku (or other)    |
+| Payments           | Stripe API           |
+| Version Control    | Git & GitHub         |
+---------------------------------------------
+---
+
+You could even mention optional extras like DreamStudio for logo generation, or Miro/Figma if you evolve to those later.
+
+Want me to format this section for `README.md` and slot it into your current layout? I’ll make it blend in like it was always meant to be there.
+
 
 ## 🚀 Agile Workflow
 
