@@ -50,19 +50,17 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 ## 🛠 Technologies & Software Used
 
----------------------------------------------
-| Purpose            | Tool                 |
-|--------------------|--------------------- |
-| Code Development   | Visual Studio Code   |
-| Backend Framework  | Django (Python)      |
-| Database           | PostgreSQL           |
-| UI Styling         | HTML, CSS, Bootstrap |
-| Design/Mockups     | CorelDraw, Photoshop |
-| Wireframing        | CorelDraw, Photoshop |
-| Deployment         | Heroku (or other)    |
-| Payments           | Stripe API           |
-| Version Control    | Git & GitHub         |
----------------------------------------------
+| Purpose            | Tool(s)                       |
+|--------------------|-------------------------------|
+| Code Development   | Visual Studio Code            |
+| Backend Framework  | Django (Python)               |
+| Database           | PostgreSQL                    |
+| UI Styling         | HTML, CSS, Bootstrap          |
+| Design/Mockups     | CorelDraw, Photoshop          |
+| Wireframing        | CorelDraw, Photoshop          |
+| Deployment         | Heroku (or similar)           |
+| Payments           | Stripe API                    |
+| Version Control    | Git & GitHub                  |
 
 ## 🚀 Agile Workflow
 
@@ -86,9 +84,9 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 - Homepage  
 - Post detail & premium prompt  
 - Admin dashboard  
-- User profile + saved posts  
+- User profile | saved posts  
 
-### Website muck ups
+### Website low-fidelity wireframes
 
 #### 🏠 Homepage (Public View)
 
@@ -171,6 +169,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 #### 💳 Subscription Page
 
 
+
 +--------------------------------------------------+
 | Choose Your Plan 💼                              |
 +--------------------------------------------------+
@@ -190,6 +189,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | [Return to Blog]                                 |
 +--------------------------------------------------+
 
+
 ### Wireframe design
 
 #### Homepage
@@ -198,7 +198,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 #### Mobile Homepage
 
-![Homepage wireframe mobile ](/static/images/PP5-wireframe-mobile-homepage.png)
+![Homepage wireframe mobile ](/static/images/PP5-wireframe-mobile-homepage-simple.png)
 
 ## ⚙️ Setup Instructions
 
