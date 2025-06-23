@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Virtual Environment
+venv/
+env/
+
+# Django files
+db.sqlite3
+*.pyc
+
+# VSCode settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Git
+*.swp
+*.bak
+*.tmp
+
+# Media & Design
+*.psd
+*.cdr
+*.ai
+*.xcf
+*.svg~
+design_exports/
+
+# Env Files
+.env
+.env.*
+
+# Migrations (optional, if generated)
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
