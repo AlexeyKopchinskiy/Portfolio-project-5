@@ -1,3 +1,17 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def start_page(request):
+    return render(request, "start.html")
+
+
+def about_page(request):
+    return render(request, "about.html")
+
+
+def cookies_page(request):
+    return render(request, "cookies.html")
+
+
+def terms_page(request):
+    return render(request, "terms.html")
