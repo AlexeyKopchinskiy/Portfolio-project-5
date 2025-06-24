@@ -62,6 +62,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | Deployment         | Heroku (or similar)           |
 | Payments           | Stripe API                    |
 | Version Control    | Git & GitHub                  |
+| Github emoji       | Github emoji markup           |
 
 ## 🚀 Agile Workflow
 
@@ -123,7 +124,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 **dbdiagram.io** is used for DB modelling
 
-### User model
+### 👦 User model
 ```
 Table users {
   id integer [primary key]
@@ -133,7 +134,7 @@ Table users {
 }
 ```
 
-### Posts model
+### 📃 Posts model
 ```
 Table posts {
   id integer [primary key]
@@ -145,7 +146,7 @@ Table posts {
 }
 ```
 
-### Following users
+### 🐾 Following users
 ```
 Table follows {
   following_user_id integer
@@ -194,6 +195,22 @@ Table subscriptions {
 ## SQL markdown
 
 ![SQL markdown](./static/images/sql-markdown.png)
+
+## User access rights
+
+| View / action                  |   Groups allowed      |     Description    |
+|--------------------------------|-----------------------|--------------------|
+| Admin Dashboard (/admin/)      | Admins (via is_staff) | Full access to Django's built-in admin site for managing models, users, and site data.                   |
+| Author Dashboard (/dashboard/) | Authors, Editors      | Personal workspace to manage drafts, edit posts, view writing stats. |
+| Create New Post                | Authors               | Access to a post creation form and the ability to submit content for review or publication. |
+| Edit/Delete Own Post           | Authors               | Authors can update or remove only the posts they’ve authored. |
+| Edit/Publish Any Post          | Editors, Admins       | Editors and admins can modify or publish any post on the platform, not just their own. |
+| View Published Posts           | Everyone              | Public blog posts are viewable by anyone visiting the site. |
+| Comment on Posts               | Logged-in Users       | Users with accounts can write comments on posts. |
+| Moderate/Delete Comments       | Moderators, Editors, Admins | Ability to remove or flag inappropriate comments and maintain community standards |
+| Manage User Groups / Permissions | Admins (via Django admin) | Only superusers can assign groups, roles, and advanced permissions via the admin panel. |
+| View Subscription Settings     | Logged-in Users (Readers, Authors) | Access to personal subscription status, invoices, and upgrade/cancel options. |
+| Access Premium Content         | Anyone with is_premium=True | Restricts access to exclusive or paywalled content for premium subscribers only. |
 
 ## ⚙️ Setup Instructions
 
