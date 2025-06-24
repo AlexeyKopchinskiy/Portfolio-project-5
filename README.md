@@ -104,6 +104,10 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 ![Mobile login / register page](./static/images/pp5-wireframe-mobile-login-register-page.png)
 
+### Mobile Member Page
+
+![Mobile Member Page](./static/images/pp5-wireframe-mobile-member-page.png)
+
 ## 🔧 Django Apps
 
 | **App name**    | **Purpose**                                  |
