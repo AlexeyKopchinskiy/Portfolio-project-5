@@ -141,7 +141,9 @@ python manage.py runserver
 
 ## 📄 License
 🧑‍💻 Code
-This project is licensed under the MIT License.
+This project is licensed under the dual-license (MIT License + Creative Commons).
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## ✍️ Content
 All original written content (blog posts, mock posts, text) is licensed under
