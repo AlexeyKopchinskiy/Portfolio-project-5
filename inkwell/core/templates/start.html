@@ -1,8 +1,49 @@
-{% extends 'base.html' %}
-
+{% extends "base.html" %}
 {% block title %}Welcome to InkWell{% endblock %}
 
 {% block content %}
-  <h1>Welcome to InkWell</h1>
-  <p>A publishing platform for bold voices and mindful readers.</p>
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-4 fw-bold">Welcome to InkWell</h1>
+      <p class="col-md-8 fs-5">
+        A home for thoughtful creators and curious readers. 
+        Publish your voice. Discover others. Shape the narrative.
+      </p>
+      <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Publish Boldly</h5>
+          <p class="card-text">Write with ease. Craft longform essays, poetry, or micro-stories—and control your publishing flow.</p>
+          <a href="#" class="btn btn-outline-primary">Start Writing</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Discover Creators</h5>
+          <p class="card-text">Find voices that challenge, inspire, or soothe. InkWell learns your taste and brings them to you.</p>
+          <a href="#" class="btn btn-outline-primary">Explore Posts</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Support Premium Work</h5>
+          <p class="card-text">Subscribe to your favorite authors, unlock premium essays, and keep quality writing alive.</p>
+          <a href="#" class="btn btn-outline-primary">See Plans</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 {% endblock %}

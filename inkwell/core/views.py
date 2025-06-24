@@ -15,3 +15,7 @@ def cookies_page(request):
 
 def terms_page(request):
     return render(request, "terms.html")
+
+
+def prices_page(request):
+    return render(request, "prices.html")

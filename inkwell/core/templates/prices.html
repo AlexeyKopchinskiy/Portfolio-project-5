@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Inkwell prices{% endblock %}
+{% block content %}
+<div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">Choose Your InkWell Plan</h1>
+    <p class="lead text-muted">Whether you're here to read, write, or both—there's a plan that fits your voice.</p>
+  </div>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 border-primary">
+        <div class="card-header bg-primary text-white text-center">
+          <h4 class="my-0">Reader</h4>
+        </div>
+        <div class="card-body text-center">
+          <h1 class="card-title pricing-card-title">Free</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Follow your favorite authors</li>
+            <li>Read public posts</li>
+            <li>Comment & react</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary">Create Account</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 border-success">
+        <div class="card-header bg-success text-white text-center">
+          <h4 class="my-0">Author</h4>
+        </div>
+        <div class="card-body text-center">
+          <h1 class="card-title pricing-card-title">€9<span class="fs-6 text-muted">/month</span></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Publish unlimited posts</li>
+            <li>Gain followers & feedback</li>
+            <li>Detailed post analytics</li>
+          </ul>
+          <a href="#" class="btn btn-success">Upgrade to Author</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100 border-dark">
+        <div class="card-header bg-dark text-white text-center">
+          <h4 class="my-0">Patron</h4>
+        </div>
+        <div class="card-body text-center">
+          <h1 class="card-title pricing-card-title">€15<span class="fs-6 text-muted">/month</span></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Access premium content</li>
+            <li>Support your favorite authors</li>
+            <li>Early access & bonus posts</li>
+          </ul>
+          <a href="#" class="btn btn-dark">Join as Patron</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq-1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true">
+            Can I switch plans later?
+          </button>
+        </h2>
+        <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely. You can upgrade, downgrade, or cancel your plan at any time from your account settings—no questions asked.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq-2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept all major credit and debit cards, and you can pay via Apple Pay, Google Pay, or PayPal where available.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+            Can I try InkWell before committing?
+          </button>
+        </h2>
+        <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Of course! Signing up as a Reader is 100% free. You can explore content and features before upgrading to a paid plan.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq-4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4">
+            What happens to my posts if I cancel?
+          </button>
+        </h2>
+        <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            All your published content remains visible to your readers. You just won’t be able to create new posts or access premium features.
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+{% endblock %}

@@ -96,7 +96,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 
 #### Mobile Homepage
 
-![Homepage wireframe mobile ](./static/images/pp5-wireframe-mobile-homepage-simple.png)
+![Homepage wireframe mobile](./static/images/pp5-wireframe-mobile-homepage-simple.png)
 
 #### Mobile Blog Post Details
 
