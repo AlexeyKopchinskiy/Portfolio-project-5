@@ -55,6 +55,7 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | Code Development   | Visual Studio Code            |
 | Backend Framework  | Django (Python)               |
 | Database           | PostgreSQL                    |
+| DB modelling       | Dbdiagram.io                  |
 | UI Styling         | HTML, CSS, Bootstrap          |
 | Design/Mockups     | CorelDraw, Photoshop          |
 | Wireframing        | CorelDraw, Photoshop          |
@@ -118,6 +119,81 @@ Check out the full list of [user stories and issues here](#) ← *(you can link 
 | core            | Homepage, about, footer, reusable templates  |
 | admin_dashboard | Admin-only views for content and analytics   |
 
+## DB Modelling
+
+**dbdiagram.io** is used for DB modelling
+
+### User model
+```
+Table users {
+  id integer [primary key]
+  username varchar
+  role varchar
+  created_at timestamp
+}
+```
+
+### Posts model
+```
+Table posts {
+  id integer [primary key]
+  title varchar
+  body text [note: 'Content of the post']
+  user_id integer [not null]
+  status varchar
+  created_at timestamp
+}
+```
+
+### Following users
+```
+Table follows {
+  following_user_id integer
+  followed_user_id integer
+  created_at timestamp
+}
+```
+
+### 🏷️ tags (many-to-many with posts)
+```
+Table tags {
+  id integer [primary key]
+  name varchar
+  slug varchar
+}
+
+Table post_tags {
+  post_id integer [ref: > posts.id]
+  tag_id integer [ref: > tags.id]
+}
+```
+
+### 💬 Comments or discussion
+```
+Table comments {
+  id integer [primary key]
+  post_id integer [ref: > posts.id]
+  user_id integer [ref: > users.id]
+  content text
+  created_at timestamp
+}
+```
+
+### 💼 Premium subscriptions (tied to Stripe IDs)
+```
+Table subscriptions {
+  id integer [primary key]
+  user_id integer [ref: > users.id]
+  plan varchar
+  started_on timestamp
+  expires_on timestamp
+  stripe_customer_id varchar
+}
+```
+
+## SQL markdown
+
+![SQL markdown](./static/images/sql-markdown.png)
 
 ## ⚙️ Setup Instructions
 
