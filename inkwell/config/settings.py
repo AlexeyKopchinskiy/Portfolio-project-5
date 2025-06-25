@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "core",  # Custom app for core functionality
     "accounts",  # Custom app for user accounts
+    "widget_tweaks",  # For form tweaks in templates
 ]
 
 MIDDLEWARE = [

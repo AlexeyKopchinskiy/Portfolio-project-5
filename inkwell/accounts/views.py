@@ -13,19 +13,19 @@ def in_group(group_name):
 @login_required
 @user_passes_test(in_group("Reader"))
 def reader_dashboard(request):
-    return render(request, "reader_dashboard.html")
+    return render(request, "reader_dashboard/dashboard.html")
 
 
 @login_required
 @user_passes_test(in_group("Author"))
 def author_dashboard(request):
-    return render(request, "author_dashboard.html")
+    return render(request, "author_dashboard/dashboard.html")
 
 
 @login_required
 @user_passes_test(in_group("Patron"))
 def patron_dashboard(request):
-    return render(request, "patron_dashboard.html")
+    return render(request, "patron_dashboard/dashboard.html")
 
 
 def register_reader(request):
