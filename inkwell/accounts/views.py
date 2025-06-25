@@ -1,9 +1,9 @@
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.models import Group
+from .forms import ReaderSignUpForm
 from django.shortcuts import render
 
 # Create your views here.
-
-from django.contrib.auth.decorators import login_required, user_passes_test
-from django.shortcuts import render
 
 
 def in_group(group_name):
@@ -26,3 +26,18 @@ def author_dashboard(request):
 @user_passes_test(in_group("Patron"))
 def patron_dashboard(request):
     return render(request, "patron_dashboard.html")
+
+
+def register_reader(request):
+    if request.method == "POST":
+        form = ReaderSignUpForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            # Add to "Reader" group
+            reader_group = Group.objects.get(name="Reader")
+            user.groups.add(reader_group)
+            login(request, user)
+            return redirect("reader_dashboard")
+    else:
+        form = ReaderSignUpForm()
+    return render(request, "registration/register.html", {"form": form})
