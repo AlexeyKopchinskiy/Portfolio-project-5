@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "core",  # Custom app for core functionality
     "accounts",  # Custom app for user accounts
     "widget_tweaks",  # For form tweaks in templates
+    "blog",  # Custom app for blog functionality
 ]
 
 MIDDLEWARE = [
