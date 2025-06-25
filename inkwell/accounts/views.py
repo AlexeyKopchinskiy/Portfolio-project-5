@@ -1,10 +1,11 @@
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.models import Group
-from django.contrib.auth import logout
+from django.contrib.auth import logout, login
 from .forms import ReaderSignUpForm
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 
 # Create your views here.
@@ -16,6 +17,7 @@ def in_group(group_name):
 
 def custom_logout(request):
     logout(request)
+    messages.info(request, "You’ve been logged out.")
     return redirect("start")  # or whatever view you prefer
 
 
@@ -46,6 +48,9 @@ def register_reader(request):
             reader_group = Group.objects.get(name="Reader")
             user.groups.add(reader_group)
             login(request, user)
+            messages.success(
+                request, "Your account has been created! Welcome aboard."
+            )
             return redirect("reader_dashboard")
     else:
         form = ReaderSignUpForm()
@@ -61,3 +66,12 @@ class RoleBasedLoginView(LoginView):
             return reverse_lazy("patron_dashboard")
         else:
             return reverse_lazy("reader_dashboard")
+
+    def form_valid(self, form):
+        response = super().form_valid(form)  # Logs in the user
+
+        user = self.request.user
+        username = user.get_full_name() or user.username
+        messages.success(self.request, f"Welcome back, {username}!")
+
+        return response
