@@ -40,6 +40,9 @@ def patron_dashboard(request):
 
 
 def register_reader(request):
+    if request.user.is_authenticated:
+        return redirect("reader_dashboard")
+    # If the user is already authenticated, redirect to the reader dashboard
     if request.method == "POST":
         form = ReaderSignUpForm(request.POST)
         if form.is_valid():
@@ -58,6 +61,13 @@ def register_reader(request):
 
 
 class RoleBasedLoginView(LoginView):
+    # Custom login view that redirects users based on their group membership
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            messages.info(request, "You're already signed in.")
+            return redirect(self.get_success_url())
+        return super().dispatch(request, *args, **kwargs)
+
     def get_success_url(self):
         user = self.request.user
         if user.groups.filter(name="Author").exists():
