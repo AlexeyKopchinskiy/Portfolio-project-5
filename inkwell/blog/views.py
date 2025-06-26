@@ -1,6 +1,10 @@
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .forms import PostForm
+from django.utils.text import slugify
+from .models import Post
+
 
 # Create your views here.
 
@@ -20,6 +24,16 @@ def create_post(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
+
+            # Generate a unique slug
+            base_slug = slugify(post.title)
+            slug = base_slug
+            counter = 1
+            while Post.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            post.slug = slug
+
             post.save()
             form.save_m2m()  # for tags
             messages.success(request, "Your post has been created!")
