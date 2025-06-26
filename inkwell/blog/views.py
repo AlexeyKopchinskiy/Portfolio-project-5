@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required, user_passes_test
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import PostForm
 from django.utils.text import slugify
@@ -41,3 +41,8 @@ def create_post(request):
     else:
         form = PostForm()
     return render(request, "author_dashboard/create_post.html", {"form": form})
+
+
+def post_detail(request, slug):
+    post = get_object_or_404(Post, slug=slug, published=True)
+    return render(request, "post_detail.html", {"post": post})
