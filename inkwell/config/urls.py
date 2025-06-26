@@ -31,4 +31,5 @@ urlpatterns = [
     path("", include("core.urls")),
     path("dashboard/", include("accounts.urls")),
     path("", render, {"template_name": "home.html"}, name="home"),
+    path("blog/", include("blog.urls", namespace="blog")),
 ]

@@ -41,6 +41,9 @@ class Post(models.Model):
             self.slug = slug
         super().save(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse("blog:post_detail", kwargs={"slug": self.slug})
+
 
 class Category(models.Model):
     """Defines a category that a blog post can belong to,
