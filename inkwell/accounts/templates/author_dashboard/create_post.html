@@ -2,13 +2,12 @@
 {% load static %}
 
 {% block content %}
-
 <div class="container mt-5">
   <div class="row align-items-start">
-    <!-- Left: Registration Form -->
+    <!-- Post Form -->
     <div class="col-md-6">
-      <div class="form-container border rounded shadow-sm">
-        <h3>Create an Account</h3>
+      <div class="form-container">
+        <h3 class="mb-4 text-start">Write a New Blog Post</h3>
         <form method="post">
           {% csrf_token %}
           {% for field in form %}
@@ -23,32 +22,31 @@
             </div>
           {% endfor %}
           <div class="form-submit">
-            <button type="submit">Register</button>
+            <button type="submit">Publish</button>
           </div>
         </form>
       </div>
     </div>
 
-    <!-- Right: Info Panels -->
+    <!-- Sidebar Info -->
     <div class="col-md-6 d-flex flex-column gap-3">
       <div class="info-box bg-light border rounded p-3 shadow-sm">
-        <h5 class="mb-2">Why register?</h5>
+        <h5 class="mb-2">Writing Tips</h5>
         <ul class="mb-0">
-          <li>Access member-only content</li>
-          <li>Comment and join discussions</li>
-          <li>Bookmark and follow your favorite authors</li>
+          <li>Start with a strong headline</li>
+          <li>Use short paragraphs and subheadings</li>
+          <li>Include images or quotes where possible</li>
         </ul>
       </div>
       <div class="info-box bg-light border rounded p-3 shadow-sm mt-3">
-        <h5 class="mb-2">Why subscribe?</h5>
+        <h5 class="mb-2">Before Publishing</h5>
         <ul class="mb-0">
-          <li>Receive weekly digests and editor picks</li>
-          <li>Stay up to date with new posts</li>
-          <li>Unlock early access to new features</li>
+          <li>Preview your post first</li>
+          <li>Check for typos and grammar</li>
+          <li>Tag categories accurately</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
 {% endblock %}
